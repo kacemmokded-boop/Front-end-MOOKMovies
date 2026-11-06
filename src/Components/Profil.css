@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f3ff, #eef0ff);
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    border-right: 1px solid #e5e1f5;
+    box-shadow: 4px 0 15px rgba(100, 90, 160, 0.06);
+}
+
+.logo {
+    color: #7655c9;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.nav-links li {
+    color: #77788f;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover,
+.nav-links .active {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: white;
+}
+
+.logout {
+    margin-top: 50px;
+    color: #e05a70;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    color: #333344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(100, 90, 160, 0.12);
+    border: 1px solid #ebe7f5;
+    width: 100%;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #8b5cf6;
+}
+
+.profile-header h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #5145a8;
+}
+
+.profile-header p {
+    margin-bottom: 20px;
+    color: #77788f;
+}
+
+.btn {
+  margin-top: 18px;
+  margin-right: 15px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #7667e8, #a16eff);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 20px rgba(118, 103, 232, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover glow */
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(118, 103, 232, 0.35);
+}
+
+/* click effect */
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn-delete {
+  margin-top: 18px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ff6b81, #f43f5e);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 0 2px #f43f5e, 0 6px 20px rgba(244, 63, 94, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover glow */
+.btn-delete:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(244, 63, 94, 0.3);
+}
+
+/* click effect */
+.btn-delete:active {
+  transform: scale(0.96);
+}
+
+/* Modal Owner */
+.modal-owner {
+  color: #5145a8 !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Custom Modal */
+.custom-modal {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid #e5e1f5;
+  color: #333344;
+  box-shadow: 0 15px 40px rgba(100, 90, 160, 0.15);
+}
