@@ -1,4 +1,4 @@
-/* ===== PAGE BACKGROUND (same cinematic feel) ===== */
+/* ===== PAGE BACKGROUND ===== */
 .auth-page {
   min-height: 100vh;
   display: flex;
@@ -6,9 +6,9 @@
   align-items: center;
 
   background:
-    radial-gradient(circle at 20% 20%, #1e1b4b 0%, transparent 40%),
-    radial-gradient(circle at 80% 80%, #0f172a 0%, transparent 50%),
-    #020617;
+    radial-gradient(circle at 20% 20%, #e0e7ff 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, #fce7f3 0%, transparent 50%),
+    #f5f7ff;
 }
 
 /* ===== CARD ===== */
@@ -19,10 +19,10 @@
   border-radius: 18px;
   position: relative;
 
-  background: linear-gradient(180deg, #111827, #020617);
-  border: 1px solid #1f2937;
+  background: linear-gradient(180deg, #ffffff, #f8f9ff);
+  border: 1px solid #e2e5f0;
 
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 25px 60px rgba(80, 90, 150, 0.15);
   animation: fadeIn 0.5s ease;
 }
 
@@ -33,8 +33,8 @@
   inset: 0;
   border-radius: 18px;
   padding: 1px;
-  background: linear-gradient(180deg, transparent, #ff00cc, transparent);
-  opacity: 0.6;
+  background: linear-gradient(180deg, transparent, #a78bfa, transparent);
+  opacity: 0.5;
   pointer-events: none;
 }
 
@@ -44,35 +44,35 @@
   margin-bottom: 28px;
   font-weight: 700;
   font-size: 26px;
-  color: #ff4fd8;
+  color: #7655d8;
 }
 
 /* ===== LABELS ===== */
 .auth-card .form-label {
-  color: #94a3b8;
+  color: #555b75;
   font-weight: 500;
 }
 
 /* ===== INPUTS ===== */
 .auth-card .form-control {
-  background-color: #020617;
-  border: 1px solid #334155;
-  color: #e2e8f0;
+  background-color: #f8f9ff;
+  border: 1px solid #dce0ef;
+  color: #333344;
   border-radius: 10px;
   padding: 12px;
   transition: all 0.25s ease;
 }
 
 .auth-card .form-control::placeholder {
-  color: #64748b;
+  color: #a0a5ba;
 }
 
 /* focus glow */
 .auth-card .form-control:focus {
-  background-color: #020617;
-  border-color: #ff00cc;
-  box-shadow: 0 0 0 2px rgba(255, 0, 204, 0.25);
-  color: #fff;
+  background-color: #ffffff;
+  border-color: #9b7aed;
+  box-shadow: 0 0 0 2px rgba(155, 122, 237, 0.2);
+  color: #222233;
 }
 
 /* ===== BUTTON ===== */
@@ -84,7 +84,7 @@
   font-weight: 700;
   letter-spacing: 0.3px;
 
-  background: linear-gradient(135deg, #ff00cc, #7c3aed);
+  background: linear-gradient(135deg, #8b6ce8, #b07ae8);
   border: none;
   color: white;
 
@@ -93,7 +93,7 @@
 
 .auth-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(255, 0, 204, 0.4);
+  box-shadow: 0 15px 35px rgba(139, 108, 232, 0.3);
 }
 
 /* ===== ANIMATION ===== */
